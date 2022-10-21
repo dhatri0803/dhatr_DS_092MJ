@@ -1,1 +1,63 @@
-{"nbformat":4,"nbformat_minor":0,"metadata":{"colab":{"provenance":[],"collapsed_sections":[],"authorship_tag":"ABX9TyPzti4HF6IRpT2xbrSvQAUa"},"kernelspec":{"name":"python3","display_name":"Python 3"},"language_info":{"name":"python"}},"cells":[{"cell_type":"code","execution_count":6,"metadata":{"colab":{"base_uri":"https://localhost:8080/","height":502},"id":"EQdVg-EkboBh","executionInfo":{"status":"error","timestamp":1665670664862,"user_tz":-330,"elapsed":1700,"user":{"displayName":"Dhatri V Sharma","userId":"09481866596748577652"}},"outputId":"ee83b179-664c-47fc-cafd-b7a1b2bc183a"},"outputs":[{"output_type":"error","ename":"KeyError","evalue":"ignored","traceback":["\u001b[0;31m---------------------------------------------------------------------------\u001b[0m","\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)","\u001b[0;32m/usr/local/lib/python3.7/dist-packages/pandas/core/indexes/base.py\u001b[0m in \u001b[0;36mget_loc\u001b[0;34m(self, key, method, tolerance)\u001b[0m\n\u001b[1;32m   3360\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 3361\u001b[0;31m                 \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_engine\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget_loc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcasted_key\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   3362\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyError\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0merr\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n","\u001b[0;32m/usr/local/lib/python3.7/dist-packages/pandas/_libs/index.pyx\u001b[0m in \u001b[0;36mpandas._libs.index.IndexEngine.get_loc\u001b[0;34m()\u001b[0m\n","\u001b[0;32m/usr/local/lib/python3.7/dist-packages/pandas/_libs/index.pyx\u001b[0m in \u001b[0;36mpandas._libs.index.IndexEngine.get_loc\u001b[0;34m()\u001b[0m\n","\u001b[0;32mpandas/_libs/hashtable_class_helper.pxi\u001b[0m in \u001b[0;36mpandas._libs.hashtable.PyObjectHashTable.get_item\u001b[0;34m()\u001b[0m\n","\u001b[0;32mpandas/_libs/hashtable_class_helper.pxi\u001b[0m in \u001b[0;36mpandas._libs.hashtable.PyObjectHashTable.get_item\u001b[0;34m()\u001b[0m\n","\u001b[0;31mKeyError\u001b[0m: 0","\nThe above exception was the direct cause of the following exception:\n","\u001b[0;31mKeyError\u001b[0m                                  Traceback (most recent call last)","\u001b[0;32m<ipython-input-6-9aa920b47ed1>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     56\u001b[0m       \u001b[0mwriter\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwriterow\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mval\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     57\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 58\u001b[0;31m \u001b[0mgetEstimatedTravelTime\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m","\u001b[0;32m<ipython-input-6-9aa920b47ed1>\u001b[0m in \u001b[0;36mgetEstimatedTravelTime\u001b[0;34m()\u001b[0m\n\u001b[1;32m     27\u001b[0m   \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mrange\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mn\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     28\u001b[0m   \u001b[0;31m#latitides and longitudes for source and destination\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 29\u001b[0;31m     \u001b[0msrc01\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msrc_lat\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0msrc_long\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     30\u001b[0m     \u001b[0mdest01\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdest_lat\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mdest_long\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     31\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n","\u001b[0;32m/usr/local/lib/python3.7/dist-packages/pandas/core/frame.py\u001b[0m in \u001b[0;36m__getitem__\u001b[0;34m(self, key)\u001b[0m\n\u001b[1;32m   3456\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcolumns\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mnlevels\u001b[0m \u001b[0;34m>\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3457\u001b[0m                 \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_getitem_multilevel\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mkey\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 3458\u001b[0;31m             \u001b[0mindexer\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mcolumns\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget_loc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mkey\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   3459\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mis_integer\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mindexer\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3460\u001b[0m                 \u001b[0mindexer\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0mindexer\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n","\u001b[0;32m/usr/local/lib/python3.7/dist-packages/pandas/core/indexes/base.py\u001b[0m in \u001b[0;36mget_loc\u001b[0;34m(self, key, method, tolerance)\u001b[0m\n\u001b[1;32m   3361\u001b[0m                 \u001b[0;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_engine\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget_loc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcasted_key\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3362\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyError\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0merr\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 3363\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyError\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mkey\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0merr\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   3364\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   3365\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mis_scalar\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mkey\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0misna\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mkey\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhasnans\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n","\u001b[0;31mKeyError\u001b[0m: 0"]}],"source":["#!pip install haversine\n","#importing libraries for reading and calculating distance anf time\n","import haversine as hs\n","import numpy as np\n","import pandas as pd\n","\n","def getEstimatedTravelTime():\n","\n","  #input file is imported and stored in data1 data frame for reference\n","  data1=pd.read_csv('Input.csv')\n","  #print(data1) to verify\n","\n","  #src is used to store source latitudes and longitudes \n","  src=pd.read_csv('Input.csv',usecols=['Source_Lat','Source_Long'])\n","\n","  #src_lat and src_long for source latitude and longitude respectively\n","  src_lat=pd.read_csv('Input.csv',usecols=['Source_Lat'])\n","  src_long=pd.read_csv('Input.csv',usecols=['Source_Long'])\n","\n","  #dest_lat and dest_long for destination latitude and longitude respectively\n","  dest_lat=pd.read_csv('Input.csv',usecols=['Dest_Lat'])\n","  dest_long=pd.read_csv('Input.csv',usecols=['Dest_Long'])\n","\n","  #length of src dataframe\n","  n=len(src.index)\n","\n","  for i in range(n):\n","  #latitides and longitudes for source and destination\n","    src01=(src_lat[i],src_long[i])\n","    dest01=(dest_lat[i],dest_long[i])\n","\n","    #distance  are calculated between the latitudes and longitudes respectively\n","    from haversine import haversine_vector ,Unit\n","    dist=hs.haversine_vector(src01,dest01,Unit.KILOMETERS)\n","    #dist  vector elements are returned in kilometers\n","    #print(dist) for verification\n","\n","  #a vector for time is created to store the time taken to travel for distances\n","  #by numpy\n","  lst=[]\n","  time_dist=np.array(lst)\n","\n","  #distance/speed is used here\n","  #speed is 3*10^8 m/s\n","  for i in range(len(dist)):\n","    time_dist[i]=dist[i]/(1/3*(10**5))\n","\n","  #time is printed and given as output\n","  for i in range(len(time_dist)):\n","    print(time_dist[i])\n","\n","  #to append time_dist into Input.csv file\n","  with open( 'Input.csv','w') as output:\n","    writer=csv.writer(output, lineterminator='\\n')\n","    for val in list(zip(*time_dist[::-1])):\n","      writer.writerow(val) \n","\n","getEstimatedTravelTime()    "]},{"cell_type":"code","source":[],"metadata":{"id":"RWByS4K2I5FM"},"execution_count":null,"outputs":[]}]}
+!pip install haversine
+#importing libraries for reading and calculating distance anf time
+import haversine as hs
+import numpy as np
+import pandas as pd
+
+def getEstimatedTravelTime():
+
+  #input file is imported and stored in data1 data frame for reference
+  data1=pd.read_csv('Input.csv')
+  #print(data1) to verify
+
+  #src is used to store source latitudes and longitudes 
+  src=pd.read_csv('Input.csv',usecols=['Source_Lat','Source_Long'])
+
+  #src_lat and src_long for source latitude and longitude respectively
+  src_lat=pd.read_csv('Input.csv',usecols=['Source_Lat'])
+  src_long=pd.read_csv('Input.csv',usecols=['Source_Long'])
+
+  #dest_lat and dest_long for destination latitude and longitude respectively
+  dest_lat=pd.read_csv('Input.csv',usecols=['Dest_Lat'])
+  dest_long=pd.read_csv('Input.csv',usecols=['Dest_Long'])
+
+  #length of src dataframe
+  n=len(src.index)
+
+  src01=pd.DataFrame()
+  dest01=pd.DataFrame()
+
+  for i in range(n):
+  #latitides and longitudes for source and destination
+    src01.append(src_lat[i],src_long[i])
+    dest01.append(dest_lat[i],dest_long[i])
+    
+    (dest_lat[i],dest_long[i])
+
+    #distance  are calculated between the latitudes and longitudes respectively
+    from haversine import haversine_vector ,Unit
+    dist=hs.haversine_vector(src01,dest01,Unit.KILOMETERS)
+    #dist  vector elements are returned in kilometers
+    #print(dist) for verification
+
+  #a vector for time is created to store the time taken to travel for distances
+  #by numpy
+  lst=[]
+  time_dist=np.array(lst)
+
+  #distance/speed is used here
+  #speed is 3*10^8 m/s
+  for i in range(len(dist)):
+    time_dist[i]=dist[i]/(1/3*(10**5))
+
+  #time is printed and given as output
+  for i in range(len(time_dist)):
+    print(time_dist[i])
+
+  #to append time_dist into Input.csv file
+  with open('Input.csv','w') as output:
+    writer=csv.writer(output, lineterminator='\n')
+    for val in list(zip(*time_dist[::-1])):
+      writer.writerow(val) 
+
+getEstimatedTravelTime()
