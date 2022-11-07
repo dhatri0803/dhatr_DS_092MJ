@@ -1,10 +1,11 @@
 !pip install haversine
-#importing libraries for reading and calculating distance anf time
+#importing libraries for reading and calculating distance and time
 import haversine as hs
 import numpy as np
 import pandas as pd
+import csv
 
-def getEstimatedTravelTime():
+def BuildEstimatedTravelTime():
 
   #input file is imported and stored in data1 data frame for reference
   data1=pd.read_csv('Input.csv')
@@ -39,25 +40,28 @@ def getEstimatedTravelTime():
     dist=hs.haversine_vector(src01,dest01,Unit.KILOMETERS)
     #dist  vector elements are returned in kilometers
     #print(dist) for verification
+  return dist
 
-  #a vector for time is created to store the time taken to travel for distances
+dist_in_km=np.array([])
+dist_in_km=BuildEstimatedTravelTime()
+#a vector for time is created to store the time taken to travel for distances
   #by numpy
-  lst=[]
-  time_dist=np.array(lst)
+lst=[]
+time_dist=np.array(lst)
 
   #distance/speed is used here
   #speed is 3*10^8 m/s
-  for i in range(len(dist)):
-    time_dist[i]=dist[i]/(1/3*(10**5))
+for i in range(len(dist_in_km)):
+  time_dist[i]=dist_in_km[i]/(1/3*(10**5))
 
   #time is printed and given as output
-  for i in range(len(time_dist)):
-    print(time_dist[i])
+for i in range(len(time_dist)):
+  print(time_dist[i])
 
   #to append time_dist into Input.csv file
-  with open('Input.csv','w') as output:
-    writer=csv.writer(output, lineterminator='\n')
-    for val in list(zip(*time_dist[::-1])):
-      writer.writerow(val) 
+with open('Input.csv','w') as output:
+  writer=csv.writer(output, lineterminator='\n')
+  for val in list(zip(*time_dist[::-1])):
+    writer.writerow(val) 
 
-getEstimatedTravelTime()
+  
